@@ -1,0 +1,85 @@
+#please ignore this part
+#iToF_up 
+x1_up: -1
+x2_up: 1
+y1_up: -0.5
+y2_up: 2
+z1_up: 0.5
+z2_up: 0.8
+
+#reference vector
+wall_reference_up: [0,0,1]                                                                                                         #wall_reference
+ground_reference_up: [1,0,0]                                                                                         # ground refeence
+rotation_matrix_base2iToF_up: [0,-1,0,0,0,-1,1,0,0]                                            #base_link2iToF
+
+frame_id_up: "itof_up"                                                                                                      #frame_id
+iToF_topic_up: "/itof/itof_up/tof_frame/pointcloud"                                         #iToF_Topic(待定)话题
+#Virtual tf(base_link>>iToF)
+t_x_up: 0.4
+t_y_up: 0
+t_z_up: 0.6
+
+##################################################################################
+##################################################################################
+
+#iToF_right
+# #right filter parameter
+x1_right: -0.3
+x2_right: 0.3
+y1_right: 0.15
+y2_right: 0.5
+z1_right: 0.6
+z2_right: 1.0
+
+#reference vector
+wall_reference_right: [0,0,1]                                            #wall_reference
+ground_reference_right: [0,1,0]                                     # ground refeence
+
+#transform matrix
+rotation_matrix_base2iToF_right: [0,1,0,0,0,1,1,0,0]               #base_link2iToF
+
+#Frame_id
+frame_id_right: "itof_right"                                        #cloud_frame_id
+#iToF Topic 
+iToF_topic_right: "/itof/itof_front_right/tof_frame/pointcloud"           #iToF_Topic
+#Virtual TF      (base_link>>iToF)
+t_x_right: 0.4
+t_y_right: -0.4
+t_z_right: 0
+
+##################################################################################
+##################################################################################
+
+# #iToF_left
+# #left filter parameter
+x1_left: -0.3
+x2_left: 0.3
+y1_left: 0.15
+y2_left: 0.35
+z1_left: 0.6
+z2_left: 1.0
+
+#Frame_id
+frame_id_left: "itof_left"                                            #frame_id
+
+#reference vector
+wall_reference_left: [0,0,1]                                               #reference
+ground_reference_left: [0,1,0]                                     # ground refeence
+
+#transform matrix
+rotation_matrix_base2iToF_left: [0,1,0,0,0,1,1,0,0]                  #base_link2iToF
+
+#iToF Topic 
+iToF_topic_left: "/_itof/itof_front_left/tof_frame/pointcloud"               #iToF_Topic(待定)
+
+#Virtual tf(base_link>>iToF)
+t_x_left: 0.4
+t_y_left: 0.4
+t_z_left: 0
+
+
+
+
+
+
+
